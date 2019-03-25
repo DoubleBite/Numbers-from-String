@@ -13,6 +13,14 @@ can not handle "-2.5/11"
 3. '12/27'
 
 
+## Todo
+1. 把基本功能寫好
+2. 把基本註解寫好
+3. 把基本readme寫好
+4. 新增arg type
+5. 新增抓fraction
+6. 新增抓word
+
 ## Installation
 
 
