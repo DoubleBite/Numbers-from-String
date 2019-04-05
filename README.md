@@ -1,12 +1,18 @@
 # String to Numbers
 
+Get numerical string
+get nums 
+get nums with w2n
+
+
+
 This is a module 
 complementary to 
 when dealing with NLP problems
 
 
 can not handle "-2.5/11"
-
+A small helper
 
 1. '25'
 2. '25.40'
