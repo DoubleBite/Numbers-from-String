@@ -70,3 +70,6 @@ ValueError: Invalid numerical string!
 
 ## Reference
 + [Goyvaerts, Jan, and Steven Levithan. Regular expressions cookbook. O'reilly, 2012, "Chapter 6.11 Numbers with Thousand Separators"](https://www.oreilly.com/library/view/regular-expressions-cookbook/9781449327453/ch06s11.html)
+
+## License
+This project is licensed under the terms of the MIT license.
