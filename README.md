@@ -8,6 +8,7 @@ To capture the numerals in a piece of text is a common preprocess for retrieving
 
 ## Installation
 ```
+pip install nums_from_string
 ```
 
 ## Usage
