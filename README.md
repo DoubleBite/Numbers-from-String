@@ -36,6 +36,13 @@ pip install nums_from_string
 >>> nums_from_string.get_numeric_string_tokens(string2)
 ['.25', '600,000.5']
 
+>>> string3 = "Find the product of 4 and -5."
+>>> nums_from_string.get_numeric_string_tokens(string3)
+['4', '-5']
+
+>>> string4 = "The flight number is Airbus A330-300"
+>>> nums_from_string.get_numeric_string_tokens(string4, no_minus=True)
+['330', '300']
 ```
 
 

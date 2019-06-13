@@ -4,7 +4,7 @@ from fractions import Fraction
 
 
 
-def get_numeric_string_tokens(string):
+def get_numeric_string_tokens(string, no_minus=False):
     ''' Get the numeric string tokens in a string.
     
     This function uses regular expression to match numeric string tokens in a string.
@@ -13,6 +13,7 @@ def get_numeric_string_tokens(string):
     
     Args:
         string: A string from which we want to find the numeric strings.
+        no_minus: A bool that decides whether to detect the minus sign before numbers.
         
     Returns:
         tokens: A list of string containing the targeted numeric string tokens 
@@ -25,12 +26,23 @@ def get_numeric_string_tokens(string):
         >>> string2 = "David spent .25 billion dollars buying a building and 600,000,000.5 dollars getting himself a new car."
         >>> get_numeric_string_tokens(string2)
         ['.25', '600,000,000.5']
+
+        >>> string3 = "Find the product of 4 and -5?"
+        >>> get_numeric_string_tokens(string3)
+        ['4', '-5']
+
+        >>> string4 = "The flight number is Airbus A330-300"
+        >>> get_numeric_string_tokens(string4, no_minus=True)
+        ['330', '300']
         
     References:
         Numbers with Thousand Separators: https://www.oreilly.com/library/view/regular-expressions-cookbook/9781449327453/ch06s11.html
 
     '''
-    tokens = re.findall(r'-?[0-9]+(?:,[0-9]{3})*(?:\.[0-9]+)?|\.[0-9]+', string)  
+    if not no_minus:
+        tokens = re.findall(r'-?[0-9]+(?:,[0-9]{3})*(?:\.[0-9]+)?|\.[0-9]+', string)  
+    else:
+        tokens = re.findall(r'[0-9]+(?:,[0-9]{3})*(?:\.[0-9]+)?|\.[0-9]+', string)  
     return tokens
 
 
@@ -117,7 +129,7 @@ def get_nums(string):
         >>> string2 = "David spent .25 billion dollars buying a building and 600,000,000.5 dollars getting himself a new car."
         >>> get_nums(string2)
         [0.25, 600000000.5]
-        
+  
     '''
     
     tokens = get_numeric_string_tokens(string)

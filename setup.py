@@ -5,7 +5,7 @@ with open("README.md", "r") as f:
 
 setuptools.setup(
     name='nums_from_string',  
-    version='0.1.1',
+    version='0.1.2',
     author="Shih-hong Tsai",
     author_email="doublebite@iis.sinica.edu.tw",
     description="Extract numbers from a string",
