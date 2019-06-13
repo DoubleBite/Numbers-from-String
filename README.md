@@ -63,12 +63,10 @@ ValueError: Invalid numerical string!
 
 
 ## Todo
-- [ ] 把usage搬過去
-- [ ] unit test寫好
-- [ ] 把負號關掉
-- [ ] 抓 fraction
-- [ ] "-3.5/11"
+- [ ] Capture the pattern of fractions in a string
+- [ ] Capture the patterns like this "-3.5/11"
 
 
 
 ## Reference
++ [Goyvaerts, Jan, and Steven Levithan. Regular expressions cookbook. O'reilly, 2012, "Chapter 6.11 Numbers with Thousand Separators"](https://www.oreilly.com/library/view/regular-expressions-cookbook/9781449327453/ch06s11.html)
