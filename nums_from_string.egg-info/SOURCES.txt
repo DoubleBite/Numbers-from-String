@@ -1,0 +1,8 @@
+README.md
+setup.py
+nums_from_string/__init__.py
+nums_from_string/nums_from_string.py
+nums_from_string.egg-info/PKG-INFO
+nums_from_string.egg-info/SOURCES.txt
+nums_from_string.egg-info/dependency_links.txt
+nums_from_string.egg-info/top_level.txt
